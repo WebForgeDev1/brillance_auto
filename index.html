@@ -12,7 +12,6 @@
 <!-- NAV -->
 <nav>
   <a class="logo" onclick="showPage('home')">
-    <!-- Car SVG logo -->
     <svg class="logo-icon" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 38 L20 22 Q22 18 28 17 L52 17 Q58 18 60 22 L68 38 Q70 40 68 42 L66 44 Q64 46 60 46 L20 46 Q16 46 14 44 L12 42 Q10 40 12 38Z" fill="#C9A84C" opacity="0.15" stroke="#C9A84C" stroke-width="1.5"/>
       <path d="M20 38 L26 24 Q28 21 32 20 L48 20 Q52 21 54 24 L60 38" stroke="#C9A84C" stroke-width="2" fill="none" stroke-linecap="round"/>
@@ -29,12 +28,8 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a onclick="showPage('home')" id="nav-home" class="active has-arrow">Services</a></li>
     <li><a class="has-arrow">Forfaits</a></li>
-    <li><a onclick="showPage('home')" style="scroll-behavior:smooth;">Réalisations</a></li>
-    <li><a>Boutique</a></li>
-    <li><a class="has-arrow">Ressources</a></li>
-    <li><a onclick="showPage('about')" id="nav-about">À propos</a></li>
+    <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
     <li><a onclick="showPage('quote')" id="nav-quote" class="nav-cta">Devis Gratuit</a></li>
   </ul>
   <div class="hamburger" onclick="toggleMenu()" id="hamburger">
@@ -56,11 +51,8 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-content">
-      <!-- LEFT -->
       <div class="hero-left" style="animation: fadeUp 0.8s ease 0.1s both;">
-        <!-- Google rating -->
         <div class="g-badge">
-          <!-- Google G SVG -->
           <svg class="g-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
             <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -70,7 +62,7 @@
           <span class="g-stars">★★★★★</span>
           <span class="g-score">4,9 étoiles</span>
         </div>
-        <p class="g-reviews">d'après 123 avis Google</p>
+        <p class="g-reviews">avis Google</p>
 
         <h1>Spécialistes du<br>Detailing Automobile<br>à Sarthe</h1>
 
@@ -83,36 +75,29 @@
 
         <ul class="hero-checks">
           <li>Satisfaction 100% Garantie</li>
-          <li>Jusqu'à 10 ans de garantie</li>
+          <li>Nettoyage parfait à chaque fois</li>
         </ul>
 
         <div class="hero-btns">
           <button class="btn-primary" onclick="showPage('quote')">Devis Gratuit</button>
-          <button class="btn-outline" onclick="document.querySelector('.gallery-wrap').scrollIntoView({behavior:'smooth'})">Nos Réalisations</button>
+          <button class="btn-outline" onclick="document.querySelector('.showcase-wrap').scrollIntoView({behavior:'smooth'})">Nos Réalisations</button>
         </div>
 
         <button class="hero-store-link">Vous cherchez des produits de detailing ? Visitez notre boutique ↗</button>
       </div>
 
-      <!-- RIGHT: Car + Brands -->
       <div class="hero-right">
-        <img class="hero-car"
-          src="imagea.png"
-          alt="Mercedes AMG C63 – Brillance Auto">
-
+        <img class="hero-car" src="imagea.png" alt="Brillance Auto">
         <div class="hero-brands">
           <div class="brand-label">Installateur Certifié :</div>
-          <!-- SystemX -->
           <div class="brand-logo">
             <span style="font-family:'DM Sans',sans-serif;font-weight:900;font-size:1.1rem;color:#fff;letter-spacing:-0.05em;">system<span style="color:var(--gold);font-size:1.4rem;">X</span></span>
             <span style="font-size:0.45rem;color:#aaa;margin-left:0.4rem;letter-spacing:0.15em;text-transform:uppercase;line-height:1.2;">CERAMIC<br>PROTECTION</span>
           </div>
-          <!-- ZINK -->
           <div class="brand-logo">
             <span style="font-family:'DM Sans',sans-serif;font-weight:900;font-size:1.3rem;color:#fff;letter-spacing:0.05em;">ZINK</span>
             <span style="font-size:0.45rem;color:#aaa;margin-left:0.4rem;letter-spacing:0.12em;text-transform:uppercase;line-height:1.2;">PAINT<br>PROTECTION</span>
           </div>
-          <!-- 3M -->
           <div class="brand-logo">
             <span style="font-family:'DM Sans',sans-serif;font-weight:900;font-size:1.4rem;color:#fff;">3M</span>
             <span style="font-size:0.45rem;color:#aaa;margin-left:0.4rem;letter-spacing:0.1em;text-transform:uppercase;line-height:1.2;">Science.<br>Applied to Life.™</span>
@@ -126,27 +111,10 @@
   <div class="services-wrap">
     <div class="services-inner">
       <div class="services-grid">
-
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=700&q=80&fit=crop" alt="Car Detailing">
-          <div class="s-label">Detailing Auto</div>
-        </div>
-
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=700&q=80&fit=crop" alt="Revêtement Céramique">
-          <div class="s-label">Revêtement Céramique</div>
-        </div>
-
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Film de Protection PPF">
-          <div class="s-label">Film de Protection<br>Peinture (PPF)</div>
-        </div>
-
-        <div class="service-card">
-          <img src="https://i.pinimg.com/736x/2a/65/1b/2a651b51c68800ad23c1f9548604a8a2.jpg" alt="Camping-cars & Caravanes">
-          <div class="s-label">Camping-cars<br>&amp; Caravanes</div>
-        </div>
-
+        <div class="service-card"><img src="image2.jpg" alt="Car Detailing"><div class="s-label">Detailing Auto</div></div>
+        <div class="service-card"><img src="image3.jpg" alt="Revêtement Céramique"><div class="s-label">Revêtement Céramique</div></div>
+        <div class="service-card"><img src="image4.jpg" alt="Film de Protection PPF"><div class="s-label">Film de Protection<br>Peinture (PPF)</div></div>
+        <div class="service-card"><img src="image5.jpg" alt="Camping-cars"><div class="s-label">Camping-cars<br>&amp; Caravanes</div></div>
       </div>
     </div>
   </div>
@@ -158,41 +126,12 @@
         <h2>Vitrine de Nos<br>Dernières Réalisations</h2>
         <button class="btn-view-all">Voir Toutes les Réalisations</button>
       </div>
-
       <div class="showcase-grid">
-        <div class="showcase-card">
-          <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=700&q=80&fit=crop" alt="Porsche 997">
-          <div class="sc-info">
-            <div class="sc-title">1997 Porsche 997 – SystemX Pro+ Coating</div>
-            <div class="sc-meta"><span>28/01/2026</span><span>Brillance Auto</span></div>
-          </div>
-        </div>
-
-        <div class="showcase-card">
-          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=700&q=80&fit=crop" alt="Ford BC Coupe">
-          <div class="sc-info">
-            <div class="sc-title">Ford BC Coupé – Polissage &amp; Scellant</div>
-            <div class="sc-meta"><span>22/01/2026</span><span>Brillance Auto</span></div>
-          </div>
-        </div>
-
-        <div class="showcase-card">
-          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=700&q=80&fit=crop" alt="Chevrolet Silverado">
-          <div class="sc-info">
-            <div class="sc-title">Chevrolet Silverado 2500 – PPF Satiné Mat</div>
-            <div class="sc-meta"><span>18/11/2025</span><span>Brillance Auto</span></div>
-          </div>
-        </div>
-
-        <div class="showcase-card">
-          <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=700&q=80&fit=crop" alt="Toyota Corolla GR">
-          <div class="sc-info">
-            <div class="sc-title">Toyota Corolla GR – Céramique Max G+</div>
-            <div class="sc-meta"><span>30/10/2025</span><span>Brillance Auto</span></div>
-          </div>
-        </div>
+        <div class="showcase-card"><img src="image8.jpg" alt="Porsche 997"><div class="sc-info"><div class="sc-title">1997 Porsche 997 – SystemX Pro+ Coating</div><div class="sc-meta"><span>28/01/2026</span><span>Brillance Auto</span></div></div></div>
+        <div class="showcase-card"><img src="image1.jpg" alt="Ford BC Coupe"><div class="sc-info"><div class="sc-title">Ford BC Coupé – Polissage &amp; Scellant</div><div class="sc-meta"><span>22/01/2026</span><span>Brillance Auto</span></div></div></div>
+        <div class="showcase-card"><img src="image6.jpg" alt="Chevrolet Silverado"><div class="sc-info"><div class="sc-title">Chevrolet Silverado 2500 – PPF Satiné Mat</div><div class="sc-meta"><span>18/11/2025</span><span>Brillance Auto</span></div></div></div>
+        <div class="showcase-card"><img src="image7.jpg" alt="Toyota Corolla GR"><div class="sc-info"><div class="sc-title">Toyota Corolla GR – Céramique Max G+</div><div class="sc-meta"><span>30/10/2025</span><span>Brillance Auto</span></div></div></div>
       </div>
-
       <div class="showcase-arrows">
         <button class="arrow-btn">‹</button>
         <button class="arrow-btn">›</button>
@@ -206,8 +145,6 @@
     <div class="why-inner">
       <h2 class="why-title">Pourquoi Nous Choisir ?</h2>
       <div class="why-body">
-
-        <!-- Icons grid -->
         <div class="why-icons">
           <div class="why-item">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/><path d="M3 13h18M7 7h.01M7 17h.01"/></svg>
@@ -234,8 +171,6 @@
             <div class="why-item-label">Satisfaction<br>Garantie</div>
           </div>
         </div>
-
-        <!-- Text right -->
         <div class="why-text">
           <p>À Sarthe, nous nous sommes imposés depuis 5 ans comme des experts du detailing automobile. Nous bénéficions d'une note parfaite de 5/5 sur Google, dont nous sommes très fiers.</p>
           <p>En tant que petite entreprise familiale, nous offrons un service bien plus personnalisé — nous ne traitons pas nos clients comme sur une chaîne de production. Nous nous soucions vraiment de la qualité du service et du résultat final. Si nous pouvons vous voir sourire en venant récupérer votre voiture, c'est tout ce qui compte pour nous !</p>
@@ -246,7 +181,6 @@
             <button class="btn-outline" onclick="document.querySelector('.showcase-wrap').scrollIntoView({behavior:'smooth'})">Voir les Réalisations</button>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -259,24 +193,9 @@
         <h2 class="section-title">Ne Prenez Pas<br><em>Notre Parole</em></h2>
       </div>
       <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-quote">"</div>
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">Ma voiture a l'air littéralement neuve après le revêtement de protection. L'attention aux détails et les excellentes compétences en communication ajoutent une expérience vraiment remarquable.</p>
-          <div class="review-author">— Sarah T.</div>
-        </div>
-        <div class="review-card">
-          <div class="review-quote">"</div>
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">PPF complet avec céramique par-dessus, vitres teintées et jantes céramiquées. Ma voiture est absolument magnifique. Je ne pourrais pas être plus satisfait.</p>
-          <div class="review-author">— Marc W.</div>
-        </div>
-        <div class="review-card">
-          <div class="review-quote">"</div>
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">Après presque 10 ans et 100 000 km, ils ont réussi à redonner vie à ma voiture avec le forfait Max. Un vrai sens du détail, je me suis senti entre de bonnes mains.</p>
-          <div class="review-author">— Daniel K.</div>
-        </div>
+        <div class="review-card"><div class="review-quote">"</div><div class="review-stars">★★★★★</div><p class="review-text">Ma voiture a l'air littéralement neuve après le revêtement de protection. L'attention aux détails et les excellentes compétences en communication ajoutent une expérience vraiment remarquable.</p><div class="review-author">— Sarah T.</div></div>
+        <div class="review-card"><div class="review-quote">"</div><div class="review-stars">★★★★★</div><p class="review-text">PPF complet avec céramique par-dessus, vitres teintées et jantes céramiquées. Ma voiture est absolument magnifique. Je ne pourrais pas être plus satisfait.</p><div class="review-author">— Marc W.</div></div>
+        <div class="review-card"><div class="review-quote">"</div><div class="review-stars">★★★★★</div><p class="review-text">Après presque 10 ans et 100 000 km, ils ont réussi à redonner vie à ma voiture avec le forfait Max. Un vrai sens du détail, je me suis senti entre de bonnes mains.</p><div class="review-author">— Daniel K.</div></div>
       </div>
     </div>
   </div>
@@ -285,30 +204,10 @@
   <div class="locations-wrap">
     <div class="locations-inner">
       <div class="locations-grid">
-        <div class="loc-col">
-          <div class="loc-item"><span class="loc-pin">📍</span>Bentleigh</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Carrum</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Hampton</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Mordialloc</div>
-        </div>
-        <div class="loc-col">
-          <div class="loc-item"><span class="loc-pin">📍</span>Black Rock</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Carrum Downs</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Keysborough</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Oakleigh</div>
-        </div>
-        <div class="loc-col">
-          <div class="loc-item"><span class="loc-pin">📍</span>Braeside</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Chelsea Heights</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Mentone</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Sandringham</div>
-        </div>
-        <div class="loc-col">
-          <div class="loc-item"><span class="loc-pin">📍</span>Brighton</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Cheltenham</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Moorabbin</div>
-          <div class="loc-item"><span class="loc-pin">📍</span>Seaford</div>
-        </div>
+        <div class="loc-col"><div class="loc-item"><span class="loc-pin">📍</span>Bentleigh</div><div class="loc-item"><span class="loc-pin">📍</span>Carrum</div><div class="loc-item"><span class="loc-pin">📍</span>Hampton</div><div class="loc-item"><span class="loc-pin">📍</span>Mordialloc</div></div>
+        <div class="loc-col"><div class="loc-item"><span class="loc-pin">📍</span>Black Rock</div><div class="loc-item"><span class="loc-pin">📍</span>Carrum Downs</div><div class="loc-item"><span class="loc-pin">📍</span>Keysborough</div><div class="loc-item"><span class="loc-pin">📍</span>Oakleigh</div></div>
+        <div class="loc-col"><div class="loc-item"><span class="loc-pin">📍</span>Braeside</div><div class="loc-item"><span class="loc-pin">📍</span>Chelsea Heights</div><div class="loc-item"><span class="loc-pin">📍</span>Mentone</div><div class="loc-item"><span class="loc-pin">📍</span>Sandringham</div></div>
+        <div class="loc-col"><div class="loc-item"><span class="loc-pin">📍</span>Brighton</div><div class="loc-item"><span class="loc-pin">📍</span>Cheltenham</div><div class="loc-item"><span class="loc-pin">📍</span>Moorabbin</div><div class="loc-item"><span class="loc-pin">📍</span>Seaford</div></div>
       </div>
     </div>
   </div>
@@ -318,99 +217,23 @@
     <div class="partners-inner">
       <div class="partners-label">Nos Partenaires :</div>
       <div class="partners-logos">
-        <div class="partner-logo">
-          <span style="font-weight:900;font-size:1.1rem;letter-spacing:-0.03em;">system<span style="font-size:1.5rem;">X</span></span>
-          <span class="partner-sub">CERAMIC<br>PROTECTION</span>
-        </div>
+        <div class="partner-logo"><span style="font-weight:900;font-size:1.1rem;letter-spacing:-0.03em;">system<span style="font-size:1.5rem;">X</span></span><span class="partner-sub">CERAMIC<br>PROTECTION</span></div>
         <div class="partner-divider"></div>
-        <div class="partner-logo">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2L4 6v6c0 5.5 3.5 10.7 8 12 4.5-1.3 8-6.5 8-12V6L12 2z"/></svg>
-          <span style="font-weight:900;font-size:1.3rem;letter-spacing:0.05em;">ZINK</span>
-          <span class="partner-sub">PAINT PROTECTION FILM</span>
-        </div>
+        <div class="partner-logo"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2L4 6v6c0 5.5 3.5 10.7 8 12 4.5-1.3 8-6.5 8-12V6L12 2z"/></svg><span style="font-weight:900;font-size:1.3rem;letter-spacing:0.05em;">ZINK</span><span class="partner-sub">PAINT PROTECTION FILM</span></div>
         <div class="partner-divider"></div>
-        <div class="partner-logo">
-          <span style="font-weight:900;font-size:1.5rem;">3M</span>
-          <span class="partner-sub">Science.<br>Applied to Life.™</span>
-        </div>
+        <div class="partner-logo"><span style="font-weight:900;font-size:1.5rem;">3M</span><span class="partner-sub">Science.<br>Applied to Life.™</span></div>
       </div>
     </div>
   </div>
 
-  <!-- MAIN FOOTER -->
   <footer class="main-footer">
     <div class="footer-inner">
-      <!-- Horaires d'ouverture -->
-      <div class="footer-col">
-        <div class="footer-col-title">Horaires d'ouverture</div>
-        <div class="hours-grid">
-          <span class="day">Lun</span><span class="hrs">8:00 am – 5:30 pm</span>
-          <span class="day">Mar</span><span class="hrs">8:00 am – 5:30 pm</span>
-          <span class="day">Mer</span><span class="hrs">8:00 am – 5:30 pm</span>
-          <span class="day">Jeu</span><span class="hrs">8:00 am – 5:30 pm</span>
-          <span class="day">Ven</span><span class="hrs">8:00 am – 5:30 pm</span>
-          <span class="day">Sam</span><span class="hrs">8:00 am – 3:00 pm</span>
-          <span class="day">Dim</span><span class="hrs" style="color:#888;">Fermé</span>
-        </div>
-      </div>
-
-      <!-- Coordonnées -->
-      <div class="footer-col">
-        <div class="footer-col-title">Coordonnées</div>
-        <div class="contact-lines">
-          <div class="contact-line">📞 0491 714 935</div>
-          <div class="contact-line">📍 ** Rue de Le Mans 72100 </div>
-          <div class="contact-line">✉️ contact@brillanceauto.com.au</div>
-        </div>
-        <div class="social-icons">
-          <a class="soc" href="#" title="Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a class="soc" href="#" title="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a class="soc" href="#" title="YouTube">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
-          </a>
-          <a class="soc" href="#" title="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Nos Services -->
-      <div class="footer-col">
-        <div class="footer-col-title">Nos Services</div>
-        <div class="footer-links">
-          <a>Detailing Auto</a>
-          <a>Revêtement Céramique</a>
-          <a>Film de Protection Peinture (PPF)</a>
-          <a>Detailing Camping-cars &amp; Caravanes</a>
-        </div>
-      </div>
-
-      <!-- Liens Rapides -->
-      <div class="footer-col">
-        <div class="footer-col-title">Liens Rapides</div>
-        <div class="footer-links">
-          <a onclick="showPage('home')">Accueil</a>
-          <a onclick="showPage('quote')">Devis Gratuit</a>
-          <a onclick="showPage('about')">À propos</a>
-          <a onclick="showPage('contact')">Nous Contacter</a>
-        </div>
-      </div>
+      <div class="footer-col"><div class="footer-col-title">Horaires d'ouverture</div><div class="hours-grid"><span class="day">Lun</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mar</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mer</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Jeu</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Ven</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Sam</span><span class="hrs">8:00 am – 3:00 pm</span><span class="day">Dim</span><span class="hrs" style="color:#888;">Fermé</span></div></div>
+      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 ** Rue de Le Mans 72100</div><div class="contact-line">✉️ contact@brillanceauto.fr</div></div><div class="social-icons"><a class="soc" href="#" title="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a class="soc" href="#" title="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="soc" href="#" title="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.96-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a><a class="soc" href="#" title="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg></a></div></div>
+      <div class="footer-col"><div class="footer-col-title">Nos Services</div><div class="footer-links"><a>Detailing Auto</a><a>Revêtement Céramique</a><a>Film de Protection Peinture (PPF)</a><a>Detailing Camping-cars &amp; Caravanes</a></div></div>
+      <div class="footer-col"><div class="footer-col-title">Liens Rapides</div><div class="footer-links"><a onclick="showPage('home')">Accueil</a><a onclick="showPage('quote')">Devis Gratuit</a><a onclick="showPage('about')">À propos</a><a onclick="showPage('contact')">Nous Contacter</a></div></div>
     </div>
-
-    <!-- Bottom bar -->
-    <div class="footer-bottom">
-      <span>Copyright © 2026 • Brillance Auto – Tous droits réservés</span>
-      <div class="footer-bottom-links">
-        <a>Politique de Confidentialité</a>
-        <a>Conditions d'Utilisation</a>
-        <a>Politique des Cookies</a>
-        <a>Plan du Site</a>
-      </div>
-    </div>
+    <div class="footer-bottom"><span>Copyright © 2026 • Brillance Auto – Tous droits réservés</span><div class="footer-bottom-links"><a>Politique de Confidentialité</a><a>Conditions d'Utilisation</a><a>Politique des Cookies</a><a>Plan du Site</a></div></div>
   </footer>
 </div>
 
@@ -423,61 +246,35 @@
       <p>Une entreprise familiale fondée sur la passion, la précision et le refus de faire des compromis.</p>
     </div>
   </div>
-
   <div class="about-body">
     <div class="about-grid">
       <div class="about-text">
         <p>Brillance Auto a été fondée après des années de frustration croissante face à une industrie qui privilégiait la rapidité à la qualité.</p>
         <p>La plupart des ateliers pressent leurs techniciens pour respecter les délais — des produits bon marché et des techniques rapides sont utilisés pour maximiser les profits. Nous avons vu cela et savions qu'il devait y avoir une meilleure façon de faire.</p>
         <p>Nous avons donc créé Brillance Auto : un endroit où chaque véhicule est traité avec le respect qu'il mérite, où aucun travail n'est jamais bâclé, et où le résultat final fait véritablement sourire nos clients à la récupération de leur voiture.</p>
-        <p>Aujourd'hui, Brillance Auto opère depuis deux ateliers hautement sécurisés à Mentone et sert des clients dans tout Sarthe. Notre équipe n'utilise que les produits de la plus haute qualité et emploie des spécialistes passionnés par leur métier.</p>
+        <p>Aujourd'hui, Brillance Auto opère depuis deux ateliers hautement sécurisés à Mentone et sert des clients dans tout Sarthe.</p>
       </div>
       <div class="owner-card">
         <div class="owner-avatar">J</div>
         <div>
           <div class="owner-role">Fondateur &amp; Chef Détailer</div>
           <div class="owner-name">Joe Patton</div>
-          <p class="owner-bio" style="margin-top:0.75rem;">Après des années dans le secteur du detailing et face à la qualité constamment sacrifiée au profit de la rapidité, Joe a fondé Brillance Auto pour prouver que les choses pouvaient être faites différemment — et mieux. Il supervise personnellement chaque travail qui sort de l'atelier.</p>
+          <p class="owner-bio" style="margin-top:0.75rem;">Après des années dans le secteur du detailing et face à la qualité constamment sacrifiée au profit de la rapidité, Joe a fondé Brillance Auto pour prouver que les choses pouvaient être faites différemment — et mieux.</p>
         </div>
       </div>
     </div>
-
     <div class="section-label" style="margin-bottom:2rem;">Nos Valeurs</div>
     <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">🎯</span>
-        <div class="value-title">Précision</div>
-        <p class="value-desc">Nous prenons le temps de bien faire. Chaque panneau, chaque bord, chaque couture — traité avec une attention obsessionnelle aux détails.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">💎</span>
-        <div class="value-title">Qualité</div>
-        <p class="value-desc">Nous n'utilisons que des produits leaders — System X, Zink et 3M. Aucun compromis, aucun raccourci.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🤝</span>
-        <div class="value-title">Confiance</div>
-        <p class="value-desc">Nous traitons chaque véhicule comme s'il était le nôtre. Nos clients reviennent car ils savent qu'ils peuvent compter sur nous.</p>
-      </div>
+      <div class="value-card"><span class="value-icon">🎯</span><div class="value-title">Précision</div><p class="value-desc">Nous prenons le temps de bien faire. Chaque panneau, chaque bord, chaque couture — traité avec une attention obsessionnelle aux détails.</p></div>
+      <div class="value-card"><span class="value-icon">💎</span><div class="value-title">Qualité</div><p class="value-desc">Nous n'utilisons que des produits leaders — System X, Zink et 3M. Aucun compromis, aucun raccourci.</p></div>
+      <div class="value-card"><span class="value-icon">🤝</span><div class="value-title">Confiance</div><p class="value-desc">Nous traitons chaque véhicule comme s'il était le nôtre. Nos clients reviennent car ils savent qu'ils peuvent compter sur nous.</p></div>
     </div>
   </div>
-
-  <div class="partners-wrap">
-    <div class="partners-inner">
-      <div class="partners-label">Nos Partenaires :</div>
-      <div class="partners-logos">
-        <div class="partner-logo"><span style="font-weight:900;font-size:1.1rem;">system<span style="font-size:1.5rem;">X</span></span><span class="partner-sub">CERAMIC<br>PROTECTION</span></div>
-        <div class="partner-divider"></div>
-        <div class="partner-logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 2L4 6v6c0 5.5 3.5 10.7 8 12 4.5-1.3 8-6.5 8-12V6L12 2z"/></svg><span style="font-weight:900;font-size:1.2rem;">ZINK</span><span class="partner-sub">PAINT PROTECTION FILM</span></div>
-        <div class="partner-divider"></div>
-        <div class="partner-logo"><span style="font-weight:900;font-size:1.4rem;">3M</span><span class="partner-sub">Science.<br>Applied to Life.™</span></div>
-      </div>
-    </div>
-  </div>
+  <div class="partners-wrap"><div class="partners-inner"><div class="partners-label">Nos Partenaires :</div><div class="partners-logos"><div class="partner-logo"><span style="font-weight:900;font-size:1.1rem;">system<span style="font-size:1.5rem;">X</span></span><span class="partner-sub">CERAMIC<br>PROTECTION</span></div><div class="partner-divider"></div><div class="partner-logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 2L4 6v6c0 5.5 3.5 10.7 8 12 4.5-1.3 8-6.5 8-12V6L12 2z"/></svg><span style="font-weight:900;font-size:1.2rem;">ZINK</span><span class="partner-sub">PAINT PROTECTION FILM</span></div><div class="partner-divider"></div><div class="partner-logo"><span style="font-weight:900;font-size:1.4rem;">3M</span><span class="partner-sub">Science.<br>Applied to Life.™</span></div></div></div></div>
   <footer class="main-footer">
     <div class="footer-inner">
       <div class="footer-col"><div class="footer-col-title">Horaires d'ouverture</div><div class="hours-grid"><span class="day">Lun</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mar</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mer</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Jeu</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Ven</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Sam</span><span class="hrs">8:00 am – 3:00 pm</span><span class="day">Dim</span><span class="hrs" style="color:#888;">Fermé</span></div></div>
-      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 Unit 13/23 Shearson Cres, Mentone VIC 3194</div><div class="contact-line">✉️ contact@brillanceauto.com.au</div></div></div>
+      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 ** Rue de Le Mans 72100</div><div class="contact-line">✉️ contact@brillanceauto.fr</div></div></div>
       <div class="footer-col"><div class="footer-col-title">Nos Services</div><div class="footer-links"><a>Detailing Auto</a><a>Revêtement Céramique</a><a>Film de Protection Peinture (PPF)</a><a>Detailing Camping-cars &amp; Caravanes</a></div></div>
       <div class="footer-col"><div class="footer-col-title">Liens Rapides</div><div class="footer-links"><a onclick="showPage('home')">Accueil</a><a onclick="showPage('quote')">Devis Gratuit</a><a onclick="showPage('about')">À propos</a><a onclick="showPage('contact')">Nous Contacter</a></div></div>
     </div>
@@ -494,84 +291,34 @@
       <p>Que vous ayez une question ou soyez prêt à réserver — nous sommes là pour vous aider.</p>
     </div>
   </div>
-
   <div class="contact-body">
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Informations de Contact</h3>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">📍</div>
-          <div>
-            <div class="contact-item-title">Adresse de l'Atelier</div>
-            <div class="contact-item-val">Mentone, Sarthe VIC<br>2 Ateliers Sécurisés</div>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">📞</div>
-          <div>
-            <div class="contact-item-title">Téléphone</div>
-            <div class="contact-item-val">Sur demande</div>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">✉️</div>
-          <div>
-            <div class="contact-item-title">E-mail</div>
-            <div class="contact-item-val">contact@brillanceauto.fr</div>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">🕐</div>
-          <div>
-            <div class="contact-item-title">Horaires d'Ouverture</div>
-            <div class="contact-item-val">Lun–Ven : 8h00 – 18h00<br>Sam : 8h00 – 14h00<br>Dim : Fermé</div>
-          </div>
-        </div>
-
-        <div style="background:var(--card);border:1px solid var(--border);padding:1.5rem;border-radius:2px;margin-top:2rem;">
-          <div style="font-weight:600;color:#fff;margin-bottom:0.5rem;">Dépôt &amp; Récupération Flexibles</div>
-          <div style="color:var(--muted);font-size:0.85rem;line-height:1.6;">Nos deux ateliers nous permettent d'accueillir davantage de véhicules avec des horaires de dépôt et de récupération adaptés à votre emploi du temps.</div>
-        </div>
+        <div class="contact-item"><div class="contact-item-icon">📍</div><div><div class="contact-item-title">Adresse de l'Atelier</div><div class="contact-item-val">Sarthe, France<br>2 Ateliers Sécurisés</div></div></div>
+        <div class="contact-item"><div class="contact-item-icon">📞</div><div><div class="contact-item-title">Téléphone</div><div class="contact-item-val">Sur demande</div></div></div>
+        <div class="contact-item"><div class="contact-item-icon">✉️</div><div><div class="contact-item-title">E-mail</div><div class="contact-item-val">contact@brillanceauto.fr</div></div></div>
+        <div class="contact-item"><div class="contact-item-icon">🕐</div><div><div class="contact-item-title">Horaires d'Ouverture</div><div class="contact-item-val">Lun–Ven : 8h00 – 18h00<br>Sam : 8h00 – 14h00<br>Dim : Fermé</div></div></div>
+        <div style="background:var(--card);border:1px solid var(--border);padding:1.5rem;border-radius:2px;margin-top:2rem;"><div style="font-weight:600;color:#fff;margin-bottom:0.5rem;">Dépôt &amp; Récupération Flexibles</div><div style="color:var(--muted);font-size:0.85rem;line-height:1.6;">Nos deux ateliers nous permettent d'accueillir davantage de véhicules avec des horaires adaptés à votre emploi du temps.</div></div>
       </div>
-
       <div class="contact-form">
         <h3>Envoyez-Nous un Message</h3>
         <div class="form-row">
-          <div class="form-group">
-            <label>Prénom</label>
-            <input type="text" placeholder="Jean">
-          </div>
-          <div class="form-group">
-            <label>Nom</label>
-            <input type="text" placeholder="Dupont">
-          </div>
+          <div class="form-group"><label>Prénom</label><input type="text" placeholder="Jean"></div>
+          <div class="form-group"><label>Nom</label><input type="text" placeholder="Dupont"></div>
         </div>
-        <div class="form-group">
-          <label>E-mail</label>
-          <input type="email" placeholder="jean@email.com">
-        </div>
-        <div class="form-group">
-          <label>Téléphone</label>
-          <input type="tel" placeholder="06 xx xx xx xx">
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Parlez-nous de votre véhicule et de ce que vous recherchez..."></textarea>
-        </div>
+        <div class="form-group"><label>E-mail</label><input type="email" placeholder="jean@email.com"></div>
+        <div class="form-group"><label>Téléphone</label><input type="tel" placeholder="06 xx xx xx xx"></div>
+        <div class="form-group"><label>Message</label><textarea placeholder="Parlez-nous de votre véhicule et de ce que vous recherchez..."></textarea></div>
         <button class="btn-primary" style="width:100%;" onclick="submitForm('contact-success')">Envoyer le Message</button>
         <div class="success-msg" id="contact-success">✓ Merci ! Nous vous répondrons dans les 24 heures.</div>
       </div>
     </div>
   </div>
-
   <footer class="main-footer">
     <div class="footer-inner">
       <div class="footer-col"><div class="footer-col-title">Horaires d'ouverture</div><div class="hours-grid"><span class="day">Lun</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mar</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mer</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Jeu</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Ven</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Sam</span><span class="hrs">8:00 am – 3:00 pm</span><span class="day">Dim</span><span class="hrs" style="color:#888;">Fermé</span></div></div>
-      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 Unit 13/23 Shearson Cres, Mentone VIC 3194</div><div class="contact-line">✉️ contact@brillanceauto.com.au</div></div></div>
+      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 ** Rue de Le Mans 72100</div><div class="contact-line">✉️ contact@brillanceauto.fr</div></div></div>
       <div class="footer-col"><div class="footer-col-title">Nos Services</div><div class="footer-links"><a>Detailing Auto</a><a>Revêtement Céramique</a><a>Film de Protection Peinture (PPF)</a><a>Detailing Camping-cars &amp; Caravanes</a></div></div>
       <div class="footer-col"><div class="footer-col-title">Liens Rapides</div><div class="footer-links"><a onclick="showPage('home')">Accueil</a><a onclick="showPage('quote')">Devis Gratuit</a><a onclick="showPage('about')">À propos</a><a onclick="showPage('contact')">Nous Contacter</a></div></div>
     </div>
@@ -588,45 +335,22 @@
       <p>Parlez-nous de votre véhicule et nous vous répondrons sous 24h avec un devis détaillé.</p>
     </div>
   </div>
-
   <div class="quote-body">
     <div class="quote-form">
       <h2>Demandez Votre Devis Gratuit</h2>
       <p>Sans engagement. Réponse rapide. Tarifs honnêtes.</p>
-
       <div class="form-row">
-        <div class="form-group">
-          <label>Prénom *</label>
-          <input type="text" placeholder="Jean">
-        </div>
-        <div class="form-group">
-          <label>Nom *</label>
-          <input type="text" placeholder="Dupont">
-        </div>
+        <div class="form-group"><label>Prénom *</label><input type="text" placeholder="Jean"></div>
+        <div class="form-group"><label>Nom *</label><input type="text" placeholder="Dupont"></div>
       </div>
-
       <div class="form-row">
-        <div class="form-group">
-          <label>E-mail *</label>
-          <input type="email" placeholder="jean@email.com">
-        </div>
-        <div class="form-group">
-          <label>Téléphone *</label>
-          <input type="tel" placeholder="06 xx xx xx xx">
-        </div>
+        <div class="form-group"><label>E-mail *</label><input type="email" placeholder="jean@email.com"></div>
+        <div class="form-group"><label>Téléphone *</label><input type="tel" placeholder="06 xx xx xx xx"></div>
       </div>
-
       <div class="form-row">
-        <div class="form-group">
-          <label>Marque du Véhicule</label>
-          <input type="text" placeholder="ex : Toyota, BMW, Tesla">
-        </div>
-        <div class="form-group">
-          <label>Modèle &amp; Année</label>
-          <input type="text" placeholder="ex : Camry 2022">
-        </div>
+        <div class="form-group"><label>Marque du Véhicule</label><input type="text" placeholder="ex : Toyota, BMW, Tesla"></div>
+        <div class="form-group"><label>Modèle &amp; Année</label><input type="text" placeholder="ex : Camry 2022"></div>
       </div>
-
       <div class="form-group">
         <label>État du Véhicule</label>
         <select>
@@ -638,7 +362,6 @@
           <option>Classique / Vintage</option>
         </select>
       </div>
-
       <div class="form-group">
         <label>Services Souhaités</label>
         <div class="service-checkboxes">
@@ -652,21 +375,15 @@
           <label class="checkbox-item"><input type="checkbox"> Je ne sais pas – Besoin de Conseils</label>
         </div>
       </div>
-
-      <div class="form-group">
-        <label>Détails Supplémentaires</label>
-        <textarea placeholder="Décrivez vos préoccupations, les zones à traiter en priorité ou toute question..."></textarea>
-      </div>
-
+      <div class="form-group"><label>Détails Supplémentaires</label><textarea placeholder="Décrivez vos préoccupations, les zones à traiter en priorité ou toute question..."></textarea></div>
       <button class="btn-primary" style="width:100%;font-size:0.95rem;padding:1.1rem;" onclick="submitForm('quote-success')">Envoyer ma Demande de Devis →</button>
       <div class="success-msg" id="quote-success">✓ Demande reçue ! Nous la traiterons personnellement et vous répondrons sous 24 heures.</div>
     </div>
   </div>
-
   <footer class="main-footer">
     <div class="footer-inner">
       <div class="footer-col"><div class="footer-col-title">Horaires d'ouverture</div><div class="hours-grid"><span class="day">Lun</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mar</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Mer</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Jeu</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Ven</span><span class="hrs">8:00 am – 5:30 pm</span><span class="day">Sam</span><span class="hrs">8:00 am – 3:00 pm</span><span class="day">Dim</span><span class="hrs" style="color:#888;">Fermé</span></div></div>
-      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 Unit 13/23 Shearson Cres, Mentone VIC 3194</div><div class="contact-line">✉️ contact@brillanceauto.com.au</div></div></div>
+      <div class="footer-col"><div class="footer-col-title">Coordonnées</div><div class="contact-lines"><div class="contact-line">📞 0491 714 935</div><div class="contact-line">📍 ** Rue de Le Mans 72100</div><div class="contact-line">✉️ contact@brillanceauto.fr</div></div></div>
       <div class="footer-col"><div class="footer-col-title">Nos Services</div><div class="footer-links"><a>Detailing Auto</a><a>Revêtement Céramique</a><a>Film de Protection Peinture (PPF)</a><a>Detailing Camping-cars &amp; Caravanes</a></div></div>
       <div class="footer-col"><div class="footer-col-title">Liens Rapides</div><div class="footer-links"><a onclick="showPage('home')">Accueil</a><a onclick="showPage('quote')">Devis Gratuit</a><a onclick="showPage('about')">À propos</a><a onclick="showPage('contact')">Nous Contacter</a></div></div>
     </div>
